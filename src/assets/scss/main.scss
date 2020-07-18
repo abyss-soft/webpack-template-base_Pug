@@ -1,0 +1,21 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+//@import "utils/_reset";
+@import "utils/_normalize";
+@import "utils/_functions";
+@import "smart-grid";
+
+.content-wrapper {
+  @include row-flex();
+  @include col();
+  @include size(1); /* Задаём размер элементу по-умолчанию - элементы будут занимать по 1 колонки */
+  @include size-xl(12); /* при 1200px - На планшете по ... колонок */
+  @include size-lg(12); /* при 992px - На планшете по ... колонок */
+  @include size-md(12); /* при 768px - На планшете по ... колонок*/
+  @include size-sm(12); /* при 576px - На телефоне по ... колонок*/
+  @include size-xs(12); /* при 320px - На телефоне с маленьким экраном по ... колонок */
+  flex-direction: column;
+  font-family: "AvenirNextCyr-Demi", serif;
+}
