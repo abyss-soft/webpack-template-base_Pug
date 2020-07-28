@@ -1,0 +1,31 @@
+extends ../layout/base
+
+block variables
+    //подключаем основу для страницы и выводим в нее данные
+    - var title='Webpack-template with Pug';
+    - var description='Description for webpack + Pug';
+    - var pageClass='index-page';
+
+block content
+
+ section(class="l-container")
+  div(class="l-row")
+     div(class="logo")
+     div(class="logo")
+
+  div(class="content-wrapper")
+      +item('Заголовок 1', 'Первое описание')
+      +item('Заголовок 2', 'Второе описание')
+      +item('Заголовок 3', 'Третье описание')
+
+ div(class="l-row")
+     div(class="img-example")
+         img(src="/assets/img/pinguin.jpg")
+
+block script
+    script(type='text/javascript').
+      let bar = function (x, y) {
+        console.log(x + y);
+      };
+      bar(1, 5);
+

@@ -1,0 +1,19 @@
+include ../utils/mixins
+
+
+block variables
+    // Это основа для страниц
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title #{title}
+        meta(name="description", content=description)
+
+    body(class=pageClass)
+        include ../includes/modules/header
+        div(class="content-wrapper")
+            block content
+        include ../includes/modules/footer
+
+    block script
