@@ -22,7 +22,7 @@
 [https://github.com/abyss-soft/webpack-template-base_vue_vuex](https://github.com/abyss-soft/webpack-template-base_vue_vuex) 
 
 
-**если нужна простая сборка с gulp 4.0, то она тут **
+**если нужна простая сборка с gulp 4.0, то она тут**
 [https://github.com/abyss-soft/gulp4-html](https://github.com/abyss-soft/gulp4-html) 
 
 ----
